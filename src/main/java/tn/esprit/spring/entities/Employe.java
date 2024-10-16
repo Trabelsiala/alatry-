@@ -151,6 +151,14 @@ public class Employe implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	public boolean estActif() {
+		return this.actif;
+	}
+	public void changerRole(Role nouveauRole) {
+		this.role = nouveauRole;
+	}
+
+
 
 	@Override
 	public String toString() {
