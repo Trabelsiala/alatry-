@@ -65,4 +65,18 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- Configuration du référentiel Nexus -->
+	<repositories>
+		<repository>
+			<id>nexus3-repo</id>
+			<url>http://192.168.127.129:8081/repository/maven-public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>
